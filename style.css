@@ -1,0 +1,29 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-style: "Poppins";
+}
+
+.header_main {
+  display: flex;
+
+  &__zag {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
