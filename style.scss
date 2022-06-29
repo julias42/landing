@@ -102,10 +102,14 @@ body {
 
   &__content {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     width: 100%;
     margin-top: 106px;
+
+    &__content-left {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
 
     &_link {
       display: flex;
@@ -156,6 +160,9 @@ body {
       color: #fefefe;
       text-decoration: none;
       margin-top: 68px;
+    }
+    &__content-right {
+      display: flex;
     }
   }
 }
