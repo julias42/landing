@@ -19,13 +19,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background: url(img/background_header.jpg);
+  background: url(img/background_header.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  background-color: #e5e5e5;
   border-top-right-radius: 120px;
   border-top-left-radius: 120px;
   min-height: 951px;
+  z-index: 1;
 
   &__top {
     display: flex;
@@ -177,8 +179,9 @@ img {
 .main {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 109px;
+  padding-top: 109px;
   overflow: hidden;
+  background: #e5e5e5;
   &__head {
     display: flex;
   }
@@ -242,6 +245,7 @@ img {
 
     &_img {
       display: block;
+      border-radius: 60px;
     }
 
     &_arrow {
@@ -266,11 +270,65 @@ img {
   display: flex;
   gap: 68px;
 
+  &__image {
+    display: flex;
+    &_img {
+      border-radius: 60px;
+    }
+  }
+
+  &__alpanasap {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    margin-top: 35px;
+  }
   &__text {
     max-width: 565px;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 68px;
-    color: #0f1f1c;
+
+    &_zag {
+      font-weight: 500;
+      font-size: 45px;
+      line-height: 68px;
+      color: #0f1f1c;
+    }
+
+    &_img {
+      display: flex;
+      width: 134px;
+      height: 134px;
+      background: #ffaa99;
+      border-radius: 71.5px;
+    }
+
+    &_alp {
+      font-weight: 500;
+      font-size: 33px;
+      line-height: 50px;
+      color: #0f1f1c;
+      margin-left: 10px;
+    }
+
+    &_jap {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 38px;
+      color: #0f1f1c;
+      opacity: 0.5;
+    }
+
+    &_satisfying {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      color: #0f1f1c;
+      opacity: 0.5;
+      margin-top: 60px;
+    }
+    &_star {
+      display: flex;
+      gap: 8px;
+      margin-top: 30px;
+    }
   }
 }

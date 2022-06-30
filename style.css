@@ -26,13 +26,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url(img/background_header.jpg);
+  background: url(img/background_header.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  background-color: #e5e5e5;
   border-top-right-radius: 120px;
   border-top-left-radius: 120px;
   min-height: 951px;
+  z-index: 1;
 }
 
 .header__top {
@@ -240,8 +242,9 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 109px;
+  padding-top: 109px;
   overflow: hidden;
+  background: #e5e5e5;
 }
 
 .main__head {
@@ -328,6 +331,7 @@ img {
 
 .choise__image_img {
   display: block;
+  border-radius: 60px;
 }
 
 .choise__image_arrow {
@@ -360,11 +364,78 @@ img {
   gap: 68px;
 }
 
+.customers__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.customers__image_img {
+  border-radius: 60px;
+}
+
+.customers__alpanasap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 33px;
+  margin-top: 35px;
+}
+
 .customers__text {
   max-width: 565px;
+}
+
+.customers__text_zag {
   font-weight: 500;
   font-size: 45px;
   line-height: 68px;
   color: #0f1f1c;
+}
+
+.customers__text_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 134px;
+  height: 134px;
+  background: #ffaa99;
+  border-radius: 71.5px;
+}
+
+.customers__text_alp {
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 50px;
+  color: #0f1f1c;
+  margin-left: 10px;
+}
+
+.customers__text_jap {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  color: #0f1f1c;
+  opacity: 0.5;
+}
+
+.customers__text_satisfying {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #0f1f1c;
+  opacity: 0.5;
+  margin-top: 60px;
+}
+
+.customers__text_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */
